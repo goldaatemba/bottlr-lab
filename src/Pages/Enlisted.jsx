@@ -1,12 +1,12 @@
 import SortBar from '../components/SortBar';
-import useFetch from '../utils/useFetch';
+import useFetch from '../UseFetch';
 import Filter from '../components/Filter';
 import { useState } from 'react';
-import sortFilterFunc from '../utils/sortFilterFunc';
+import sortFilterFunc from '../SortFilterFuncs';
 import BotCard from '../components/BotCard';
 import Loader from '../components/Loader';
 import axios from 'axios';
-import { API_URL } from '../constants/utility';
+import { API_URL } from '../utility';
 
 export default function Enlisted() {
 	const { data: bots, loading, error, forceUpdate } = useFetch(`${API_URL}/api/enlisted`);

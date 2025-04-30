@@ -1,12 +1,13 @@
 import SortBar from '../components/SortBar';
-import useFetch from '../utils/useFetch';
+import useFetch from '../UseFetch';
 import Filter from '../components/Filter';
 import { useState } from 'react';
-import sortFilterFunc from '../utils/sortFilterFunc';
+import sortFilterFunc from '../SortFilterFuncs.jsx';
 import BotCard from '../components/BotCard';
 import Loader from '../components/Loader';
+import Bot from '../components/Bot';
 import axios from 'axios';
-import { API_URL } from '../constants/utility';
+import { API_URL } from '../utility.js';
 
 export default function Collection() {
 	const { data: bots, loading, error, forceUpdate } = useFetch(`${API_URL}/api/bots`);

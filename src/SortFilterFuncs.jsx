@@ -1,4 +1,4 @@
-import Bot from "../components/Bot";
+import Bot from "../src/components/Bot";
 
 export default function sortFilterFunc(bots, sortValue, filterValue, setSidebarBotFunc) {
 	return bots

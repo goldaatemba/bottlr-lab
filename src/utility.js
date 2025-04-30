@@ -1,0 +1,1 @@
+export const API_URL = 'https://bot-battlr-klml.onrender.com';

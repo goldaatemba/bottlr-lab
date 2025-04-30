@@ -1,7 +1,7 @@
 import App from "./App"
-import Collection from "./pages/Collection"
-import Enlisted from "./pages/Enlisted"
-import ErrorPage from "./pages/ErrorPage"
+import Collection from "./Pages/Collection.jsx"
+import Enlisted from "./Pages/Enlisted"
+import ErrorPage from "./Pages/ErrorPage"
 
 const routes = [
     {
